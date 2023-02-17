@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form action="/" id="form">
+      <h1>BUY CINEMA TICKET </h1>
+
+      <div class="input-control">
+        Movie : <select id="movie">
+          <option style="display: none;">Select Movie</option>
+          <option>Avatar</option>
+          <option>Harry Potter</option>
+          <option>Lord of the Ring</option>
+          <option>Maze Runner</option>
+          <option>Run</option>
+          <option> Pac Man</option>
+      </select>
+        <div class="error"></div>
+      </div>
+      <div class="input-control">
+        <label for="cnt">Count</label>
+        <input  id="cnt" name="cnt" type="number" min="1" max="100" placeholder="Count">
+        <div class="error"></div>
+      </div>
+      <div class="input-control">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text">
+        <div class="error"></div>
+      </div>
+
+      <div class="input-control">
+        <label for="lstname">Last Name</label>
+        <input id="lstname" name="lstname" type="text">
+        <div class="error"></div>
+      </div>
+
+      <div class="input-control">
+        <label for="phn">Phone Number</label>
+        <input id="phn" name="phn"  type="number" placeholder="max 8 siffer">
+        <div class="error"></div>
+      </div>
+
+      <div class="input-control">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="text">
+        <div class="error"></div>
+      </div>
+      <button type="submit" onclick="recipt()">BUY</button>
+      
+     <button class="input-control" type="reset">CLEAN</button>
+     <div class="input-control" id="ticket"></div>
+    </form>
+    <div >
+    <button id="btn" class="input-control" name="clean" type="reset" onclick="clean()" >DELETE TICKETS</button>
+  </div>
+  </div>
+ 
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
